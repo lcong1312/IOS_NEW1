@@ -1,0 +1,187 @@
+name: Build Unity iOS IPA
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    name: Build unsigned IPA
+    runs-on: macos-15
+
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout source and Git LFS
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 1
+
+      - name: Pull Git LFS files
+        run: |
+          git lfs install
+          git lfs pull
+
+      - name: Show macOS and Xcode versions
+        run: |
+          sw_vers
+          xcodebuild -version
+          xcodebuild -showsdks
+
+      - name: Check repository structure
+        run: |
+          echo "Repository files:"
+          ls -la
+
+          if [ ! -d "Unity-iPhone.xcodeproj" ]; then
+            echo "ERROR: Không tìm thấy Unity-iPhone.xcodeproj"
+            exit 1
+          fi
+
+          if [ ! -f "Unity-iPhone.xcodeproj/project.pbxproj" ]; then
+            echo "ERROR: Không tìm thấy project.pbxproj"
+            exit 1
+          fi
+
+      - name: List schemes and targets
+        run: |
+          xcodebuild \
+            -project Unity-iPhone.xcodeproj \
+            -list
+
+      - name: Verify Git LFS files
+        run: |
+          echo "Các file được quản lý bởi Git LFS:"
+          git lfs ls-files || true
+
+          echo "Kiểm tra file .a:"
+          find . -name "*.a" -type f -print | head -50
+
+          BROKEN_LFS=0
+
+          while IFS= read -r file; do
+            if grep -q "^version https://git-lfs.github.com/spec/v1" "$file" 2>/dev/null; then
+              echo "ERROR: File vẫn đang là Git LFS pointer: $file"
+              BROKEN_LFS=1
+            fi
+          done < <(find . -name "*.a" -type f)
+
+          if [ "$BROKEN_LFS" -eq 1 ]; then
+            echo "Một số thư viện chưa được tải từ Git LFS."
+            exit 1
+          fi
+
+      - name: Clean previous build
+        run: |
+          rm -rf build
+          mkdir -p build
+
+      - name: Build unsigned Unity app
+        run: |
+          set -o pipefail
+
+          xcodebuild \
+            -project Unity-iPhone.xcodeproj \
+            -scheme Unity-iPhone \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination "generic/platform=iOS" \
+            -derivedDataPath "$GITHUB_WORKSPACE/build/DerivedData" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            DEVELOPMENT_TEAM="" \
+            COMPILER_INDEX_STORE_ENABLE=NO \
+            clean build \
+            | tee "$GITHUB_WORKSPACE/build/xcodebuild.log"
+
+      - name: Find generated app
+        id: find_app
+        shell: bash
+        run: |
+          APP_PATH=$(find "$GITHUB_WORKSPACE/build/DerivedData/Build/Products" \
+            -type d \
+            -name "*.app" \
+            -path "*Release-iphoneos*" \
+            ! -name "*Tests*" \
+            -print \
+            -quit)
+
+          if [ -z "$APP_PATH" ]; then
+            echo "ERROR: Không tìm thấy file .app"
+            echo "Nội dung thư mục Products:"
+            find "$GITHUB_WORKSPACE/build/DerivedData/Build/Products" \
+              -maxdepth 5 \
+              -print || true
+            exit 1
+          fi
+
+          echo "Đã tìm thấy:"
+          echo "$APP_PATH"
+
+          echo "app_path=$APP_PATH" >> "$GITHUB_OUTPUT"
+          echo "app_name=$(basename "$APP_PATH")" >> "$GITHUB_OUTPUT"
+
+      - name: Remove existing signatures
+        shell: bash
+        run: |
+          APP_PATH="${{ steps.find_app.outputs.app_path }}"
+
+          find "$APP_PATH" \
+            -name "_CodeSignature" \
+            -type d \
+            -prune \
+            -exec rm -rf {} + 2>/dev/null || true
+
+          find "$APP_PATH" \
+            -name "embedded.mobileprovision" \
+            -type f \
+            -delete 2>/dev/null || true
+
+      - name: Create unsigned IPA
+        shell: bash
+        run: |
+          set -e
+
+          APP_PATH="${{ steps.find_app.outputs.app_path }}"
+          APP_NAME="${{ steps.find_app.outputs.app_name }}"
+
+          IPA_DIR="$GITHUB_WORKSPACE/build/ipa"
+          PAYLOAD_DIR="$IPA_DIR/Payload"
+
+          rm -rf "$IPA_DIR"
+          mkdir -p "$PAYLOAD_DIR"
+
+          ditto "$APP_PATH" "$PAYLOAD_DIR/$APP_NAME"
+
+          cd "$IPA_DIR"
+
+          /usr/bin/zip \
+            -qry \
+            "$GITHUB_WORKSPACE/build/Unity-iOS-unsigned.ipa" \
+            Payload
+
+          echo "IPA đã tạo:"
+          ls -lh "$GITHUB_WORKSPACE/build/Unity-iOS-unsigned.ipa"
+
+          echo "Nội dung IPA:"
+          unzip -l "$GITHUB_WORKSPACE/build/Unity-iOS-unsigned.ipa" | head -50
+
+      - name: Upload unsigned IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: Unity-iOS-unsigned-IPA
+          path: build/Unity-iOS-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Upload build log when failed
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Unity-iOS-build-logs
+          path: |
+            build/xcodebuild.log
+            build/DerivedData/Logs
+          if-no-files-found: ignore
+          retention-days: 7
