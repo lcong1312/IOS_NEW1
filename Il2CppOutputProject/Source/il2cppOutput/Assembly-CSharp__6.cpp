@@ -211,6 +211,7 @@ struct SkillPaint_t819D2EC28139870F76073B2F4A37D43FF45F609E;
 struct Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E;
 struct SoundMn_t7B12596A24D63F2DDD0B971C7684411939DEBCFC;
 struct SplashScr_t9F3C288AFCF29DF5F5230A84F1288F62C0146183;
+struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE;
 struct String_t;
 struct TField_t0A74E26A2F067485D01FBAE1A69CDD5C501BC56D;
 struct TabClanIcon_t33BBF0B46F02A1DBED7B30FD2E4BB35E95373B40;
@@ -239,6 +240,7 @@ IL2CPP_EXTERN_C RuntimeClass* BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73
 IL2CPP_EXTERN_C RuntimeClass* Char_tB40D5A7CCBE5A7B6D5710FDDC19F6FF89F261704_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ChatPopup_t3C1C350456E7AD1D2F7B780AB073FAF1859F199C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ClanMessage_tC0D4B0079CF9E2B746121024C060B7C8E8430B5D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Command_t7467E7C6D0EF82073116EDE59E225C9BBF40A2E1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Controller_t3FDDA7B611D58E776AA1E3A033E20CFEFC672F48_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CrackBallScr_t95DCC7EB5A6AFB9E4B29414AD48A6D1A407BB9A2_il2cpp_TypeInfo_var;
@@ -2498,17 +2500,6 @@ struct Image_t51ADD6CE0C635A50C748D8CFC6C01C20E7A6211B  : public RuntimeObject
 	int32_t ___h;
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___colorBlend;
 };
-struct NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
-{
-	Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* ____streamSocket;
-	bool ____ownsSocket;
-	bool ____readable;
-	bool ____writeable;
-	int32_t ____closeTimeout;
-	bool ____cleanedUp;
-	int32_t ____currentReadTimeout;
-	int32_t ____currentWriteTimeout;
-};
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
 	intptr_t ___m_CachedPtr;
@@ -3186,7 +3177,7 @@ struct Service_t001237874E065ADF2E580CFFBF71C99FC6B118C8_StaticFields
 struct Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_StaticFields
 {
 	Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73* ___instance;
-	NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* ___dataStream;
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___dataStream;
 	BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* ___dis;
 	BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* ___dos;
 	RuntimeObject* ___messageHandler;
@@ -3223,7 +3214,7 @@ struct Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_StaticFields
 struct Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_StaticFields
 {
 	Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9* ___instance;
-	NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* ___dataStream;
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___dataStream;
 	BinaryReader_t9A6D85F0FE9AE4EBB5E8D66997DFD1D84939E158* ___dis;
 	BinaryWriter_tFB94D67EDFA3F6A34744A163BDABE287FDF2ED1E* ___dos;
 	RuntimeObject* ___messageHandler;
@@ -4347,6 +4338,10 @@ struct SplashScr_t9F3C288AFCF29DF5F5230A84F1288F62C0146183_StaticFields
 	SplashScr_t9F3C288AFCF29DF5F5230A84F1288F62C0146183* ___instance;
 	Image_t51ADD6CE0C635A50C748D8CFC6C01C20E7A6211B* ___imgLogo;
 };
+struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
+{
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___Null;
+};
 struct VoiceGlobalChatScreen_t664890F56C14A5C316401CD689AB13B20E671401_StaticFields
 {
 	VoiceGlobalChatScreen_t664890F56C14A5C316401CD689AB13B20E671401* ___instance;
@@ -5176,6 +5171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameScr_startFlyText_mF80AF6C21241DBD8C7
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_ME__ctor_mD4C37E8B2166BEC1523798E28E1092ED5A250362 (Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_ME2__ctor_m8CF2AE622BD10E479E50F5F0009F5D8581576123 (Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TcpClient_get_Connected_mAE5B631778361C28C783E417C09F87BA102787B5 (TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CloudflaredTcpTunnel_IsStreamConnected_m73E9A080B491F72943F89AD7422AE41623CD3759 (Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, const RuntimeMethod* method) ;
 inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared)(__this, ___0_item, method);
@@ -25536,6 +25532,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Session_ME_isConnected_m6064
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -25544,35 +25541,53 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Session_ME_isConnected_m6064
 		bool L_0 = ((Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var))->___connected;
 		if (!L_0)
 		{
-			goto IL_0023;
+			goto IL_002e;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var);
-		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_1 = ((Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var))->___sc;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_1 = ((Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var))->___dataStream;
 		if (!L_1)
 		{
-			goto IL_0023;
+			goto IL_002e;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var);
 		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_2 = ((Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var))->___sc;
-		NullCheck(L_2);
-		bool L_3;
-		L_3 = TcpClient_get_Connected_mAE5B631778361C28C783E417C09F87BA102787B5(L_2, NULL);
-		if (!L_3)
+		if (!L_2)
 		{
-			goto IL_0023;
+			goto IL_0021;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var);
-		NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* L_4 = ((Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var))->___dataStream;
-		return (bool)((!(((RuntimeObject*)(NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_3 = ((Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var))->___sc;
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = TcpClient_get_Connected_mAE5B631778361C28C783E417C09F87BA102787B5(L_3, NULL);
+		if (L_4)
+		{
+			goto IL_002c;
+		}
 	}
 
-IL_0023:
+IL_0021:
+	{
+		il2cpp_codegen_runtime_class_init_inline(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var);
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = ((Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME_t191A95BD7E3C5C638B55BB50D72EB384A18A9F73_il2cpp_TypeInfo_var))->___dataStream;
+		il2cpp_codegen_runtime_class_init_inline(CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = CloudflaredTcpTunnel_IsStreamConnected_m73E9A080B491F72943F89AD7422AE41623CD3759(L_5, NULL);
+		return L_6;
+	}
+
+IL_002c:
+	{
+		return (bool)1;
+	}
+
+IL_002e:
 	{
 		return (bool)0;
 	}
@@ -25582,6 +25597,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Session_ME2_isConnected_m8C1
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -25590,35 +25606,53 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Session_ME2_isConnected_m8C1
 		bool L_0 = ((Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var))->___connected;
 		if (!L_0)
 		{
-			goto IL_0023;
+			goto IL_002e;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var);
-		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_1 = ((Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var))->___sc;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_1 = ((Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var))->___dataStream;
 		if (!L_1)
 		{
-			goto IL_0023;
+			goto IL_002e;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var);
 		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_2 = ((Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var))->___sc;
-		NullCheck(L_2);
-		bool L_3;
-		L_3 = TcpClient_get_Connected_mAE5B631778361C28C783E417C09F87BA102787B5(L_2, NULL);
-		if (!L_3)
+		if (!L_2)
 		{
-			goto IL_0023;
+			goto IL_0021;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var);
-		NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* L_4 = ((Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var))->___dataStream;
-		return (bool)((!(((RuntimeObject*)(NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0*)L_4) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_3 = ((Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var))->___sc;
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = TcpClient_get_Connected_mAE5B631778361C28C783E417C09F87BA102787B5(L_3, NULL);
+		if (L_4)
+		{
+			goto IL_002c;
+		}
 	}
 
-IL_0023:
+IL_0021:
+	{
+		il2cpp_codegen_runtime_class_init_inline(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var);
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = ((Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME2_t51E78E91797E1297C7947DA183493697028ED5D9_il2cpp_TypeInfo_var))->___dataStream;
+		il2cpp_codegen_runtime_class_init_inline(CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = CloudflaredTcpTunnel_IsStreamConnected_m73E9A080B491F72943F89AD7422AE41623CD3759(L_5, NULL);
+		return L_6;
+	}
+
+IL_002c:
+	{
+		return (bool)1;
+	}
+
+IL_002e:
 	{
 		return (bool)0;
 	}

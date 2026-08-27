@@ -115,18 +115,18 @@ const Il2CppCodeGenModule* g_CodeGenModules[44] =
 IL2CPP_EXTERN_C const Il2CppCodeRegistration g_CodeRegistration;
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	11,
+	24,
 	g_ReversePInvokeWrapperPointers,
-	37491,
+	38460,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	8317,
+	8601,
 	g_Il2CppInvokerPointers,
-	1542,
+	1640,
 	g_UnresolvedVirtualMethodPointers,
 	g_UnresolvedInstanceMethodPointers,
 	g_UnresolvedStaticMethodPointers,
-	393,
+	447,
 	g_Il2CppInteropData,
 	0,
 	NULL,
