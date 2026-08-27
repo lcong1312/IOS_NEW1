@@ -48,6 +48,42 @@ extern void CloudflaredTcpTunnel_IsPublicAddress_m5D66AA5DDD79B42C32E84036C0812B
 extern void CloudflaredTcpTunnel_RegisterForQuit_mD7A2F642D3E52A7867ED52F3E719C0F098919F22 (void);
 extern void CloudflaredTcpTunnel_Stop_mF3173DD30231973739C010FA9DF2F03ADB36C3B4 (void);
 extern void CloudflaredTcpTunnel__cctor_mED2FAAD4215F64B80BB9CF74197F40184F9BAF99 (void);
+extern void CloudflareRawWebSocketTcpStream__ctor_mC59CAD50233A3EA947AD185FF6FE09E75CB6B15D (void);
+extern void CloudflareRawWebSocketTcpStream_get_IsConnected_m241D123A4C43AF575E7C9F4A9190574FCA90E845 (void);
+extern void CloudflareRawWebSocketTcpStream_Connect_m08E263C84CF9BD74B9B8CC0FC1D3091F3187CDF4 (void);
+extern void CloudflareRawWebSocketTcpStream_get_CanRead_m7F138EC6F32659F2B4A041C473FDBC89E7B84FA4 (void);
+extern void CloudflareRawWebSocketTcpStream_get_CanSeek_m21A64D822D4B62B8EBF98014B5A827CA37A23B88 (void);
+extern void CloudflareRawWebSocketTcpStream_get_CanWrite_m68CF09601AC64A62C6709C60A9F4A8FFDBC83D53 (void);
+extern void CloudflareRawWebSocketTcpStream_get_CanTimeout_m2EFF9928E6EAFE1EFD5A1070BA54F0D6AD5B06F1 (void);
+extern void CloudflareRawWebSocketTcpStream_get_Length_m698AEB805D0084A677C12E8A880A128053C2536C (void);
+extern void CloudflareRawWebSocketTcpStream_get_Position_mFB22422B2D86B70AA35C6AB3BF9CDA81FA42CCE1 (void);
+extern void CloudflareRawWebSocketTcpStream_set_Position_mB37DAB260EEACF3BDC9CEE36CDC2B453399833AA (void);
+extern void CloudflareRawWebSocketTcpStream_get_ReadTimeout_m79B1548FBFF3D0334D0073C1AA1212EFCFF9086B (void);
+extern void CloudflareRawWebSocketTcpStream_set_ReadTimeout_mF8E39D85E5A55FE1923175026DABB340350970D2 (void);
+extern void CloudflareRawWebSocketTcpStream_get_WriteTimeout_mF010568E3EF6F7B3B2410029D8E2D486D33366AD (void);
+extern void CloudflareRawWebSocketTcpStream_set_WriteTimeout_mA17D52DF11C523B293FDC6E2CBBA8B38D51684C8 (void);
+extern void CloudflareRawWebSocketTcpStream_Flush_m543D3437FBAD7179530FB2A7E31A00770667BACE (void);
+extern void CloudflareRawWebSocketTcpStream_Read_m8D98A844BEB92EC13345CADD0E1DCC24CFB928FC (void);
+extern void CloudflareRawWebSocketTcpStream_Write_mBE6126D6465A78E21B01D22C94CF159CDBCEECB2 (void);
+extern void CloudflareRawWebSocketTcpStream_Seek_mF416C2430E03CA2A069DDD9D8A01F9E9AFF87BF6 (void);
+extern void CloudflareRawWebSocketTcpStream_SetLength_m575FE21B4F798FCB37A42551BC0D1616656D6C3C (void);
+extern void CloudflareRawWebSocketTcpStream_Dispose_mECCEA0DD4418763A7D7F549AEEF60332719FEEA3 (void);
+extern void CloudflareRawWebSocketTcpStream_CreateWebSocketKey_m19DE87093BDC28075312F924A7DB8B6409E6780C (void);
+extern void CloudflareRawWebSocketTcpStream_ReadHttpHeaders_m59F7C3F5C89F72178CA47D815C971869E4749D94 (void);
+extern void CloudflareRawWebSocketTcpStream_IsSwitchingProtocols_m9293F0E19D2F2A484AF68E20AFFEF4FA09936D4B (void);
+extern void CloudflareRawWebSocketTcpStream_HasValidAccept_m43FD88968CD00398F5874EC47FB934B7949F90B0 (void);
+extern void CloudflareRawWebSocketTcpStream_ComputeAccept_m9BFFAE71959772B80C19CD06A89E7A3B6B60C42F (void);
+extern void CloudflareRawWebSocketTcpStream_FirstHeaderLine_mB027D322CD20B5504C01F72A62ACBD2E37FD1D6F (void);
+extern void CloudflareRawWebSocketTcpStream_ReadNextDataFrame_m0CBA1C3D4E6A94DD340664E87BCC0657FA729B3F (void);
+extern void CloudflareRawWebSocketTcpStream_ReadExact_m822983DB8AA24E2C8EA11746B152DB6532FA27F7 (void);
+extern void CloudflareRawWebSocketTcpStream_WriteFrame_m19CF65B91C83525BFECDFCB44428B4DAC59FC1CB (void);
+extern void CloudflareRawWebSocketTcpStream_TrySetSslReadTimeout_m752504858C5CAB3A1711BEAB78A429979A788490 (void);
+extern void CloudflareRawWebSocketTcpStream_TrySetSslWriteTimeout_mACDDFD0060B89D168C0E0103A9FCACCA96138070 (void);
+extern void CloudflareRawWebSocketTcpStream_IsClosedStreamException_m01E437A3FAE22E1D2E27211B3024DD3DFCE31954 (void);
+extern void CloudflareRawWebSocketTcpStream_ApplyMask_m013796FB21C72E8A60104875BD14CC1E14CC1FE1 (void);
+extern void U3CU3Ec__cctor_m4DF4C27B9EC63A0B225B36B6C0D70FE6CA9FCA9F (void);
+extern void U3CU3Ec__ctor_m0C9AF2067759248B8229E2753F11F7818958AF8D (void);
+extern void U3CU3Ec_U3CConnectU3Eb__14_0_m5221D9B1287575ADCEB55AB6E4D85D1FBFC7EA8D (void);
 extern void TabManager_get_CurrentTab_m7301D4568A5D1AB5796F3BEC0851C96C9D2384C5 (void);
 extern void TabManager_set_CurrentTab_mDAC617901768F00081EC618C7132FABA85732306 (void);
 extern void TabManager_SwitchTab_mA795B13E7690C1386CAEC236EF7E7D7E7F8A9EE4 (void);
@@ -8239,7 +8275,7 @@ extern void NumbericSlider_getValue_mA1448B3AD1A392D9C85AC16890C9BCD19D4DA90F (v
 extern void NumbericSlider_setRange_mACA9F44A2BBA96BD5ED72CDB05886A9479684BE3 (void);
 extern void NumbericSlider_getPercentage_m76C42C63EE7FB38CF0535259625CA26E5D205CAA (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[8367] = 
+static Il2CppMethodPointer s_methodPointers[8403] = 
 {
 	NULL,
 	NULL,
@@ -8303,6 +8339,42 @@ static Il2CppMethodPointer s_methodPointers[8367] =
 	CloudflaredTcpTunnel_RegisterForQuit_mD7A2F642D3E52A7867ED52F3E719C0F098919F22,
 	CloudflaredTcpTunnel_Stop_mF3173DD30231973739C010FA9DF2F03ADB36C3B4,
 	CloudflaredTcpTunnel__cctor_mED2FAAD4215F64B80BB9CF74197F40184F9BAF99,
+	CloudflareRawWebSocketTcpStream__ctor_mC59CAD50233A3EA947AD185FF6FE09E75CB6B15D,
+	CloudflareRawWebSocketTcpStream_get_IsConnected_m241D123A4C43AF575E7C9F4A9190574FCA90E845,
+	CloudflareRawWebSocketTcpStream_Connect_m08E263C84CF9BD74B9B8CC0FC1D3091F3187CDF4,
+	CloudflareRawWebSocketTcpStream_get_CanRead_m7F138EC6F32659F2B4A041C473FDBC89E7B84FA4,
+	CloudflareRawWebSocketTcpStream_get_CanSeek_m21A64D822D4B62B8EBF98014B5A827CA37A23B88,
+	CloudflareRawWebSocketTcpStream_get_CanWrite_m68CF09601AC64A62C6709C60A9F4A8FFDBC83D53,
+	CloudflareRawWebSocketTcpStream_get_CanTimeout_m2EFF9928E6EAFE1EFD5A1070BA54F0D6AD5B06F1,
+	CloudflareRawWebSocketTcpStream_get_Length_m698AEB805D0084A677C12E8A880A128053C2536C,
+	CloudflareRawWebSocketTcpStream_get_Position_mFB22422B2D86B70AA35C6AB3BF9CDA81FA42CCE1,
+	CloudflareRawWebSocketTcpStream_set_Position_mB37DAB260EEACF3BDC9CEE36CDC2B453399833AA,
+	CloudflareRawWebSocketTcpStream_get_ReadTimeout_m79B1548FBFF3D0334D0073C1AA1212EFCFF9086B,
+	CloudflareRawWebSocketTcpStream_set_ReadTimeout_mF8E39D85E5A55FE1923175026DABB340350970D2,
+	CloudflareRawWebSocketTcpStream_get_WriteTimeout_mF010568E3EF6F7B3B2410029D8E2D486D33366AD,
+	CloudflareRawWebSocketTcpStream_set_WriteTimeout_mA17D52DF11C523B293FDC6E2CBBA8B38D51684C8,
+	CloudflareRawWebSocketTcpStream_Flush_m543D3437FBAD7179530FB2A7E31A00770667BACE,
+	CloudflareRawWebSocketTcpStream_Read_m8D98A844BEB92EC13345CADD0E1DCC24CFB928FC,
+	CloudflareRawWebSocketTcpStream_Write_mBE6126D6465A78E21B01D22C94CF159CDBCEECB2,
+	CloudflareRawWebSocketTcpStream_Seek_mF416C2430E03CA2A069DDD9D8A01F9E9AFF87BF6,
+	CloudflareRawWebSocketTcpStream_SetLength_m575FE21B4F798FCB37A42551BC0D1616656D6C3C,
+	CloudflareRawWebSocketTcpStream_Dispose_mECCEA0DD4418763A7D7F549AEEF60332719FEEA3,
+	CloudflareRawWebSocketTcpStream_CreateWebSocketKey_m19DE87093BDC28075312F924A7DB8B6409E6780C,
+	CloudflareRawWebSocketTcpStream_ReadHttpHeaders_m59F7C3F5C89F72178CA47D815C971869E4749D94,
+	CloudflareRawWebSocketTcpStream_IsSwitchingProtocols_m9293F0E19D2F2A484AF68E20AFFEF4FA09936D4B,
+	CloudflareRawWebSocketTcpStream_HasValidAccept_m43FD88968CD00398F5874EC47FB934B7949F90B0,
+	CloudflareRawWebSocketTcpStream_ComputeAccept_m9BFFAE71959772B80C19CD06A89E7A3B6B60C42F,
+	CloudflareRawWebSocketTcpStream_FirstHeaderLine_mB027D322CD20B5504C01F72A62ACBD2E37FD1D6F,
+	CloudflareRawWebSocketTcpStream_ReadNextDataFrame_m0CBA1C3D4E6A94DD340664E87BCC0657FA729B3F,
+	CloudflareRawWebSocketTcpStream_ReadExact_m822983DB8AA24E2C8EA11746B152DB6532FA27F7,
+	CloudflareRawWebSocketTcpStream_WriteFrame_m19CF65B91C83525BFECDFCB44428B4DAC59FC1CB,
+	CloudflareRawWebSocketTcpStream_TrySetSslReadTimeout_m752504858C5CAB3A1711BEAB78A429979A788490,
+	CloudflareRawWebSocketTcpStream_TrySetSslWriteTimeout_mACDDFD0060B89D168C0E0103A9FCACCA96138070,
+	CloudflareRawWebSocketTcpStream_IsClosedStreamException_m01E437A3FAE22E1D2E27211B3024DD3DFCE31954,
+	CloudflareRawWebSocketTcpStream_ApplyMask_m013796FB21C72E8A60104875BD14CC1E14CC1FE1,
+	U3CU3Ec__cctor_m4DF4C27B9EC63A0B225B36B6C0D70FE6CA9FCA9F,
+	U3CU3Ec__ctor_m0C9AF2067759248B8229E2753F11F7818958AF8D,
+	U3CU3Ec_U3CConnectU3Eb__14_0_m5221D9B1287575ADCEB55AB6E4D85D1FBFC7EA8D,
 	TabManager_get_CurrentTab_m7301D4568A5D1AB5796F3BEC0851C96C9D2384C5,
 	TabManager_set_CurrentTab_mDAC617901768F00081EC618C7132FABA85732306,
 	TabManager_SwitchTab_mA795B13E7690C1386CAEC236EF7E7D7E7F8A9EE4,
@@ -16615,12 +16687,12 @@ extern void GradientInfo__ctor_m67BC0D78C498A6D859B974A528CEE8CC075F8969_Adjusto
 extern void GroupItem__ctor_m2D6B775FAF88363A52796CE0D5B01919BEBF65FE_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[4] = 
 {
-	{ 0x0600061E, GradientInfo__ctor_mB96CB30DF7F1849D2B05C04038D2C30A979D0080_AdjustorThunk },
-	{ 0x06001000, GroupItem__ctor_mD22CD73CA11F5E20BABB8B0978BE7A0A0346C37F_AdjustorThunk },
-	{ 0x0600163C, GradientInfo__ctor_m67BC0D78C498A6D859B974A528CEE8CC075F8969_AdjustorThunk },
-	{ 0x06002051, GroupItem__ctor_m2D6B775FAF88363A52796CE0D5B01919BEBF65FE_AdjustorThunk },
+	{ 0x06000642, GradientInfo__ctor_mB96CB30DF7F1849D2B05C04038D2C30A979D0080_AdjustorThunk },
+	{ 0x06001024, GroupItem__ctor_mD22CD73CA11F5E20BABB8B0978BE7A0A0346C37F_AdjustorThunk },
+	{ 0x06001660, GradientInfo__ctor_m67BC0D78C498A6D859B974A528CEE8CC075F8969_AdjustorThunk },
+	{ 0x06002075, GroupItem__ctor_m2D6B775FAF88363A52796CE0D5B01919BEBF65FE_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[8367] = 
+static const int32_t s_InvokerIndices[8403] = 
 {
 	0,
 	0,
@@ -16684,6 +16756,42 @@ static const int32_t s_InvokerIndices[8367] =
 	8590,
 	8590,
 	8590,
+	2587,
+	5500,
+	7669,
+	5500,
+	5500,
+	5500,
+	5500,
+	5562,
+	5562,
+	4550,
+	5561,
+	4549,
+	5561,
+	4549,
+	5686,
+	1171,
+	1430,
+	2007,
+	4550,
+	4492,
+	8559,
+	8248,
+	8081,
+	7470,
+	8248,
+	8248,
+	5500,
+	4072,
+	933,
+	4549,
+	4549,
+	8081,
+	6800,
+	8590,
+	5686,
+	581,
 	8552,
 	8418,
 	7841,
@@ -24993,10 +25101,10 @@ static const int32_t s_InvokerIndices[8367] =
 static const Il2CppTokenRangePair s_rgctxIndices[5] = 
 {
 	{ 0x02000002, { 0, 155 } },
-	{ 0x06000965, { 155, 2 } },
-	{ 0x06000968, { 157, 2 } },
-	{ 0x06001983, { 159, 2 } },
-	{ 0x06001986, { 161, 2 } },
+	{ 0x06000989, { 155, 2 } },
+	{ 0x0600098C, { 157, 2 } },
+	{ 0x060019A7, { 159, 2 } },
+	{ 0x060019AA, { 161, 2 } },
 };
 extern const uint32_t g_rgctx_U3CU3Ef__AnonymousType0_22_t43F1DBA0B674F35C8E51C7C40B83972FC5203D40;
 extern const uint32_t g_rgctx_U3CenableEchoCancellationU3Ej__TPar_t0019F48D33237B7D9902602FA80B4D005874AB4E;
@@ -25331,7 +25439,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	8367,
+	8403,
 	s_methodPointers,
 	4,
 	s_adjustorThunks,
