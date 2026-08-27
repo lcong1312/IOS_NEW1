@@ -18339,7 +18339,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyMod_ConvertBytesToString_m4F1942
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_bytes;
 		NullCheck(L_0);
 		String_t* L_2;
-		L_2 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(34, L_0, L_1);
 		return L_2;
 	}
 }
@@ -18609,7 +18609,7 @@ IL_0098_3:
 									StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* L_37 = V_6;
 									NullCheck(L_37);
 									String_t* L_38;
-									L_38 = VirtualFuncInvoker0< String_t* >::Invoke(11, L_37);
+									L_38 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_37);
 									V_1 = L_38;
 									goto IL_00bb;
 								}

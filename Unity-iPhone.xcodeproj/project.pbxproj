@@ -516,6 +516,7 @@
 		D8520D972A75A0B3FACF80FD /* Generics__47.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__47.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__47.cpp; sourceTree = SOURCE_ROOT; };
 		D8A1C72A0E8063A1000160D3 /* libiPhone-lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libiPhone-lib.a"; path = "Libraries/libiPhone-lib.a"; sourceTree = SOURCE_ROOT; };
 		DA1731C322C733D4F9215478 /* UnityEngine.AnimationModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.AnimationModule.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.AnimationModule.cpp; sourceTree = SOURCE_ROOT; };
+		DB88045514EBA3611759BAB0 /* Assembly-CSharp__39.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__39.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__39.cpp"; sourceTree = SOURCE_ROOT; };
 		DBF5A1414DA20E96D008D306 /* Unity.Burst.Unsafe_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Unity.Burst.Unsafe_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/Unity.Burst.Unsafe_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		DC1C002DA32AACE7AD91663B /* GenericMethods__9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods__9.cpp; path = Il2CppOutputProject/Source/il2cppOutput/GenericMethods__9.cpp; sourceTree = SOURCE_ROOT; };
 		DC641E85B09D087E3E294418 /* GenericMethods.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods.cpp; path = Il2CppOutputProject/Source/il2cppOutput/GenericMethods.cpp; sourceTree = SOURCE_ROOT; };
@@ -735,6 +736,7 @@
 				3EAD2E0234EACBB68F7569A5 /* Assembly-CSharp__36.cpp */,
 				5C3AA7AEC8BCC431E5FEEC04 /* Assembly-CSharp__37.cpp */,
 				C86635207E96D385500A4A2C /* Assembly-CSharp__38.cpp */,
+				DB88045514EBA3611759BAB0 /* Assembly-CSharp__39.cpp */,
 				4F97D266790DB44CD01959EC /* Assembly-CSharp__4.cpp */,
 				A34734E12320BFE93D77614B /* Assembly-CSharp__5.cpp */,
 				E0994B957EB074EB69BD9ABA /* Assembly-CSharp__6.cpp */,

@@ -2808,6 +2808,17 @@ struct MoneyCharge_tD434A1115DDAF32104DC771BFD4D71BAAB5F5E42  : public mScreen_t
 	int32_t ___freeAreaHeight;
 	int32_t ___yy;
 	int32_t ___yP;
+	Image_t51ADD6CE0C635A50C748D8CFC6C01C20E7A6211B* ___qrImage;
+	int32_t ___qrSize;
+	int32_t ___qrX;
+	int32_t ___qrY;
+	int64_t ___orderCode;
+	int32_t ___amount;
+	String_t* ___checkoutUrl;
+	String_t* ___statusText;
+	bool ___isErrorStatus;
+	bool ___hasQr;
+	int64_t ___lastCheckPayment;
 };
 struct MoreSetting_t5566A2E507D39074830F1065D1FCE3E77919C93A  : public mScreen_tC008F882E4E512EBD25428104A5A960D1EA8E19C
 {
