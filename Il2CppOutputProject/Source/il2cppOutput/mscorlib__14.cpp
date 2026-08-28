@@ -8899,7 +8899,7 @@ IL_001d_1:
 IL_0029:
 	{
 		WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8* L_5;
-		L_5 = VirtualFuncInvoker0< WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8* >::Invoke(13, __this);
+		L_5 = VirtualFuncInvoker0< WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8* >::Invoke(12, __this);
 		NullCheck(L_5);
 		bool L_6;
 		L_6 = VirtualFuncInvoker0< bool >::Invoke(9, L_5);
@@ -8969,7 +8969,7 @@ IL_003e:
 			}
 			{
 				WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8* L_5;
-				L_5 = VirtualFuncInvoker0< WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8* >::Invoke(13, __this);
+				L_5 = VirtualFuncInvoker0< WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8* >::Invoke(12, __this);
 				NullCheck(((ManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158*)CastclassSealed((RuntimeObject*)L_5, ManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158_il2cpp_TypeInfo_var)));
 				bool L_6;
 				L_6 = EventWaitHandle_Set_mDF98D67F214714A9590DF82A1C51D3D851281E4D(((ManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158*)CastclassSealed((RuntimeObject*)L_5, ManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158_il2cpp_TypeInfo_var)), NULL);

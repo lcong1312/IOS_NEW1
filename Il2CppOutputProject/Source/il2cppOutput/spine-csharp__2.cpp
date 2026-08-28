@@ -10785,7 +10785,7 @@ IL_0031:
 		int32_t L_13 = V_0;
 		NullCheck(L_11);
 		String_t* L_14;
-		L_14 = VirtualFuncInvoker3< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(35, L_11, L_12, 0, L_13);
+		L_14 = VirtualFuncInvoker3< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(34, L_11, L_12, 0, L_13);
 		return L_14;
 	}
 }
@@ -11069,7 +11069,7 @@ IL_0022:
 		int32_t L_16 = V_0;
 		NullCheck(L_14);
 		String_t* L_17;
-		L_17 = VirtualFuncInvoker3< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(35, L_14, L_15, 0, L_16);
+		L_17 = VirtualFuncInvoker3< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(34, L_14, L_15, 0, L_16);
 		return L_17;
 	}
 

@@ -3287,6 +3287,7 @@ struct Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_StaticFields
 	Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* ___reconnectThread;
 	MessageCollector_tF565584666A4878292E4F15530B9633C9B8BD9C9* ___messageCollector;
 	bool ___isShuttingDown;
+	int32_t ___networkGeneration;
 };
 struct SoundMn_tE8837D3971F58868FEB4889D2581FE3836F7CDAB_StaticFields
 {

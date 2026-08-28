@@ -4305,7 +4305,7 @@ IL_005b:
 		TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* L_55 = ___0_reader;
 		NullCheck(L_55);
 		String_t* L_56;
-		L_56 = VirtualFuncInvoker0< String_t* >::Invoke(13, L_55);
+		L_56 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_55);
 		V_3 = L_56;
 		goto IL_01c5;
 	}
@@ -4315,7 +4315,7 @@ IL_01be:
 		TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* L_57 = ___0_reader;
 		NullCheck(L_57);
 		String_t* L_58;
-		L_58 = VirtualFuncInvoker0< String_t* >::Invoke(13, L_57);
+		L_58 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_57);
 		V_3 = L_58;
 	}
 
@@ -4378,7 +4378,7 @@ IL_01d5:
 		TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* L_71 = ___0_reader;
 		NullCheck(L_71);
 		String_t* L_72;
-		L_72 = VirtualFuncInvoker0< String_t* >::Invoke(13, L_71);
+		L_72 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_71);
 		V_3 = L_72;
 		goto IL_01d5;
 	}
@@ -4418,7 +4418,7 @@ IL_0202:
 		TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* L_78 = ___0_reader;
 		NullCheck(L_78);
 		String_t* L_79;
-		L_79 = VirtualFuncInvoker0< String_t* >::Invoke(13, L_78);
+		L_79 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_78);
 		V_3 = L_79;
 		goto IL_0202;
 	}
@@ -4460,7 +4460,7 @@ IL_0249:
 		TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* L_90 = ___0_reader;
 		NullCheck(L_90);
 		String_t* L_91;
-		L_91 = VirtualFuncInvoker0< String_t* >::Invoke(13, L_90);
+		L_91 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_90);
 		String_t* L_92 = L_91;
 		V_3 = L_92;
 		int32_t L_93;
@@ -4553,7 +4553,7 @@ IL_02d4:
 		TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* L_123 = ___0_reader;
 		NullCheck(L_123);
 		String_t* L_124;
-		L_124 = VirtualFuncInvoker0< String_t* >::Invoke(13, L_123);
+		L_124 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_123);
 		String_t* L_125 = L_124;
 		V_3 = L_125;
 		int32_t L_126;
@@ -14525,7 +14525,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Json_Deserialize_mD373D7B3C58D
 		TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* L_2 = ___0_text;
 		NullCheck(L_2);
 		String_t* L_3;
-		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_2);
+		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(11, L_2);
 		NullCheck(L_1);
 		RuntimeObject* L_4;
 		L_4 = JsonDecoder_Decode_m52DFB5119F8AC5F85C053E7041AB11CF947BA1DD(L_1, L_3, NULL);

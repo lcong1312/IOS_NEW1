@@ -317,7 +317,6 @@ IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t327031E412FAB2351B0022DD5DA
 IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Char_tD48C093386A7EDAA2367E609B99AB15D98812B9B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ChatPopup_t446013F9C5C9D62F254DBF35F2787C1DE6D923BE_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Command_t4313391C29D2BF583AD006A18DD41D475E2965D6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var;
@@ -500,7 +499,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC8047CA2B802D912DB4DC92FD1522163E2B4082B
 IL2CPP_EXTERN_C String_t* _stringLiteralD94CFB82577911E20413B91C5F06DF378F0087D8;
 IL2CPP_EXTERN_C String_t* _stringLiteralDAF2BD03270A51BF9C135F3694DCAD2D3E66F465;
 IL2CPP_EXTERN_C String_t* _stringLiteralDBF05A1DDE77B0BB5E59E0E3E395FA96F831BC9F;
-IL2CPP_EXTERN_C String_t* _stringLiteralDEC354D1F35E1D59BA95619F068835CFCB2625E4;
 IL2CPP_EXTERN_C String_t* _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC;
 IL2CPP_EXTERN_C String_t* _stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3;
 IL2CPP_EXTERN_C String_t* _stringLiteralEB497D316A04C86B92645DEE3A5A6C618E313DFA;
@@ -3369,6 +3367,7 @@ struct Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_StaticFields
 	Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* ___reconnectThread;
 	MessageCollector_tF565584666A4878292E4F15530B9633C9B8BD9C9* ___messageCollector;
 	bool ___isShuttingDown;
+	int32_t ___networkGeneration;
 };
 struct SoundMn_tE8837D3971F58868FEB4889D2581FE3836F7CDAB_StaticFields
 {
@@ -5586,6 +5585,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameMidlet_platformRequest_m6AABC430EC0D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginScr_actRegister_m2D8A4DF1993991562761DB4F16EC11AC536D8248 (LoginScr_t8E2803D131053CB9F49127F0B4280CCBA329E3CC* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Service_setClientType_mDF345E82FB2143884CC4F68E8590D4C192C03D28 (Service_t5EEA81B8A67F0409E08E35D48AFE31CE7FAD1E2A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginScr_selectRegisterServer_mF07BF2883C2F8091781776AEE4133372F6F24DD9 (LoginScr_t8E2803D131053CB9F49127F0B4280CCBA329E3CC* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ObfuscatedEndpoints_get_WebBaseUrl_mCF5B7C9B1D862218CB51A62742813A0EEC3327D3 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startOK_m0301FCBB86EA9CD70DB2EDD9E350B358C3278B7B (String_t* ___0_info, int32_t ___1_actionID, RuntimeObject* ___2_p, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginScr_doRegister_mF8F096F89BFC38E1FBDD08791CFB50A28AEF2AC9 (LoginScr_t8E2803D131053CB9F49127F0B4280CCBA329E3CC* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginScr_doMenu_m64DDF8C96868510E58D70D06A93EA492BE718358 (LoginScr_t8E2803D131053CB9F49127F0B4280CCBA329E3CC* __this, const RuntimeMethod* method) ;
@@ -18323,7 +18323,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyMod_ConvertBytesToString_mB3B622
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_bytes;
 		NullCheck(L_0);
 		String_t* L_2;
-		L_2 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(34, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< String_t*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33, L_0, L_1);
 		return L_2;
 	}
 }
@@ -18593,7 +18593,7 @@ IL_0098_3:
 									StreamReader_t81027449065C1B0C339DB46241D8001A6F61130B* L_37 = V_6;
 									NullCheck(L_37);
 									String_t* L_38;
-									L_38 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_37);
+									L_38 = VirtualFuncInvoker0< String_t* >::Invoke(11, L_37);
 									V_1 = L_38;
 									goto IL_00bb;
 								}
@@ -23411,7 +23411,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoginScr_perform_m176EC67BA24AD51BD97927
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3E3E2C4B66DB6B3A06FE6C4CBD32853713E7CB70);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB944D324E89341142404BAF3FB1FD652E176C9E4);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC5CA2A9C075F9921D3AD2AD469DC9EF92D2315F5);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDEC354D1F35E1D59BA95619F068835CFCB2625E4);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&mSystem_t5169E14920F07ED68BDB0E69D48A76D5F9221458_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
@@ -23760,8 +23759,10 @@ IL_0194:
 	{
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_il2cpp_TypeInfo_var);
 		GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240* L_30 = ((GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_il2cpp_TypeInfo_var))->___instance;
+		String_t* L_31;
+		L_31 = ObfuscatedEndpoints_get_WebBaseUrl_mCF5B7C9B1D862218CB51A62742813A0EEC3327D3(NULL);
 		NullCheck(L_30);
-		GameMidlet_platformRequest_m6AABC430EC0DA2E95201362F50280B3AE1E66D76(L_30, _stringLiteralDEC354D1F35E1D59BA95619F068835CFCB2625E4, NULL);
+		GameMidlet_platformRequest_m6AABC430EC0DA2E95201362F50280B3AE1E66D76(L_30, L_31, NULL);
 		goto IL_027b;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -23776,7 +23777,7 @@ IL_0194:
 
 CATCH_01a9:
 	{
-		Exception_t* L_31 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		Exception_t* L_32 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_027b;
 	}
@@ -23785,9 +23786,9 @@ IL_01af:
 	{
 		Rms_saveRMSInt_mC4B5F93C4C1313E79B8451AE3AF03911D6EA5E4C(_stringLiteral15217A64D60F52B2E241B135161ABF43C9B928BB, 0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_il2cpp_TypeInfo_var);
-		String_t* L_32 = ((mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_StaticFields*)il2cpp_codegen_static_fields_for(mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_il2cpp_TypeInfo_var))->___plsRestartGame;
+		String_t* L_33 = ((mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_StaticFields*)il2cpp_codegen_static_fields_for(mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_il2cpp_TypeInfo_var))->___plsRestartGame;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_il2cpp_TypeInfo_var);
-		GameCanvas_startOK_m0301FCBB86EA9CD70DB2EDD9E350B358C3278B7B(L_32, ((int32_t)8885), NULL, NULL);
+		GameCanvas_startOK_m0301FCBB86EA9CD70DB2EDD9E350B358C3278B7B(L_33, ((int32_t)8885), NULL, NULL);
 		return;
 	}
 
@@ -23795,16 +23796,16 @@ IL_01cb:
 	{
 		Rms_saveRMSInt_mC4B5F93C4C1313E79B8451AE3AF03911D6EA5E4C(_stringLiteral15217A64D60F52B2E241B135161ABF43C9B928BB, 1, NULL);
 		il2cpp_codegen_runtime_class_init_inline(mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_il2cpp_TypeInfo_var);
-		String_t* L_33 = ((mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_StaticFields*)il2cpp_codegen_static_fields_for(mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_il2cpp_TypeInfo_var))->___plsRestartGame;
+		String_t* L_34 = ((mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_StaticFields*)il2cpp_codegen_static_fields_for(mResources_tE7A3422548C5DB5C28872E93B0D3E389FC58C0EC_il2cpp_TypeInfo_var))->___plsRestartGame;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_il2cpp_TypeInfo_var);
-		GameCanvas_startOK_m0301FCBB86EA9CD70DB2EDD9E350B358C3278B7B(L_33, ((int32_t)8885), NULL, NULL);
+		GameCanvas_startOK_m0301FCBB86EA9CD70DB2EDD9E350B358C3278B7B(L_34, ((int32_t)8885), NULL, NULL);
 		return;
 	}
 
 IL_01e7:
 	{
-		bool L_34 = __this->___isCheck;
-		if (!L_34)
+		bool L_35 = __this->___isCheck;
+		if (!L_35)
 		{
 			goto IL_01f7;
 		}
@@ -23840,56 +23841,56 @@ IL_020d:
 
 IL_0214:
 	{
-		TField_t12AD6FE2285F6AF9F7A767FB9EDF10DBBAA955A9* L_35 = __this->___tfUser;
-		NullCheck(L_35);
-		String_t* L_36;
-		L_36 = TField_getText_m559AE09F5C1BB9494F6B6C93423F1981C9055D35_inline(L_35, NULL);
+		TField_t12AD6FE2285F6AF9F7A767FB9EDF10DBBAA955A9* L_36 = __this->___tfUser;
 		NullCheck(L_36);
 		String_t* L_37;
-		L_37 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_36, NULL);
-		Rms_saveRMSString_m7D940067D2C06C0109C0D5BA83D858AA2A099EFD(_stringLiteralB944D324E89341142404BAF3FB1FD652E176C9E4, L_37, NULL);
-		TField_t12AD6FE2285F6AF9F7A767FB9EDF10DBBAA955A9* L_38 = __this->___tfPass;
-		NullCheck(L_38);
-		String_t* L_39;
-		L_39 = TField_getText_m559AE09F5C1BB9494F6B6C93423F1981C9055D35_inline(L_38, NULL);
+		L_37 = TField_getText_m559AE09F5C1BB9494F6B6C93423F1981C9055D35_inline(L_36, NULL);
+		NullCheck(L_37);
+		String_t* L_38;
+		L_38 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_37, NULL);
+		Rms_saveRMSString_m7D940067D2C06C0109C0D5BA83D858AA2A099EFD(_stringLiteralB944D324E89341142404BAF3FB1FD652E176C9E4, L_38, NULL);
+		TField_t12AD6FE2285F6AF9F7A767FB9EDF10DBBAA955A9* L_39 = __this->___tfPass;
 		NullCheck(L_39);
 		String_t* L_40;
-		L_40 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_39, NULL);
-		Rms_saveRMSString_m7D940067D2C06C0109C0D5BA83D858AA2A099EFD(_stringLiteral3E3E2C4B66DB6B3A06FE6C4CBD32853713E7CB70, L_40, NULL);
+		L_40 = TField_getText_m559AE09F5C1BB9494F6B6C93423F1981C9055D35_inline(L_39, NULL);
+		NullCheck(L_40);
+		String_t* L_41;
+		L_41 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_40, NULL);
+		Rms_saveRMSString_m7D940067D2C06C0109C0D5BA83D858AA2A099EFD(_stringLiteral3E3E2C4B66DB6B3A06FE6C4CBD32853713E7CB70, L_41, NULL);
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t0BC8C29E15C2C8ABA9587FF9F0563BE2BBAAC061_il2cpp_TypeInfo_var);
-		bool L_41 = ((ServerListScreen_t0BC8C29E15C2C8ABA9587FF9F0563BE2BBAAC061_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t0BC8C29E15C2C8ABA9587FF9F0563BE2BBAAC061_il2cpp_TypeInfo_var))->___loadScreen;
-		if (!L_41)
+		bool L_42 = ((ServerListScreen_t0BC8C29E15C2C8ABA9587FF9F0563BE2BBAAC061_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t0BC8C29E15C2C8ABA9587FF9F0563BE2BBAAC061_il2cpp_TypeInfo_var))->___loadScreen;
+		if (!L_42)
 		{
 			goto IL_025a;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_il2cpp_TypeInfo_var);
-		ServerListScreen_t0BC8C29E15C2C8ABA9587FF9F0563BE2BBAAC061* L_42 = ((GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_il2cpp_TypeInfo_var))->___serverScreen;
-		NullCheck(L_42);
-		VirtualActionInvoker0::Invoke(4, L_42);
+		ServerListScreen_t0BC8C29E15C2C8ABA9587FF9F0563BE2BBAAC061* L_43 = ((GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_il2cpp_TypeInfo_var))->___serverScreen;
+		NullCheck(L_43);
+		VirtualActionInvoker0::Invoke(4, L_43);
 		return;
 	}
 
 IL_025a:
 	{
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_il2cpp_TypeInfo_var);
-		ServerListScreen_t0BC8C29E15C2C8ABA9587FF9F0563BE2BBAAC061* L_43 = ((GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_il2cpp_TypeInfo_var))->___serverScreen;
-		NullCheck(L_43);
-		ServerListScreen_show2_m34E8FEB92A3747DF41E82FC0F403794B96DC14A2(L_43, NULL);
+		ServerListScreen_t0BC8C29E15C2C8ABA9587FF9F0563BE2BBAAC061* L_44 = ((GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t98AD2427C3C91E9083EF5789157A5E2A13A51D15_il2cpp_TypeInfo_var))->___serverScreen;
+		NullCheck(L_44);
+		ServerListScreen_show2_m34E8FEB92A3747DF41E82FC0F403794B96DC14A2(L_44, NULL);
 		return;
 	}
 
 IL_0265:
 	{
-		TField_t12AD6FE2285F6AF9F7A767FB9EDF10DBBAA955A9* L_44 = __this->___tfUser;
-		NullCheck(L_44);
-		String_t* L_45;
-		L_45 = TField_getText_m559AE09F5C1BB9494F6B6C93423F1981C9055D35_inline(L_44, NULL);
+		TField_t12AD6FE2285F6AF9F7A767FB9EDF10DBBAA955A9* L_45 = __this->___tfUser;
 		NullCheck(L_45);
 		String_t* L_46;
-		L_46 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_45, NULL);
-		LoginScr_doRegister_m03B3F98909B5CA070AE0B553D260F1B3CA1D4A75(__this, L_46, NULL);
+		L_46 = TField_getText_m559AE09F5C1BB9494F6B6C93423F1981C9055D35_inline(L_45, NULL);
+		NullCheck(L_46);
+		String_t* L_47;
+		L_47 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_46, NULL);
+		LoginScr_doRegister_m03B3F98909B5CA070AE0B553D260F1B3CA1D4A75(__this, L_47, NULL);
 	}
 
 IL_027b:
@@ -24191,7 +24192,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Session_ME_isConnected_m4A24
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -24235,7 +24235,6 @@ IL_0021:
 	{
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_il2cpp_TypeInfo_var);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = ((Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_il2cpp_TypeInfo_var))->___dataStream;
-		il2cpp_codegen_runtime_class_init_inline(CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var);
 		bool L_6;
 		L_6 = CloudflaredTcpTunnel_IsStreamConnected_m73E9A080B491F72943F89AD7422AE41623CD3759(L_5, NULL);
 		return L_6;

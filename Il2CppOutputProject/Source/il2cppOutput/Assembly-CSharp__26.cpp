@@ -238,7 +238,6 @@ IL2CPP_EXTERN_C RuntimeClass* BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73
 IL2CPP_EXTERN_C RuntimeClass* Char_tD48C093386A7EDAA2367E609B99AB15D98812B9B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ChatPopup_t446013F9C5C9D62F254DBF35F2787C1DE6D923BE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ClanMessage_t4A17190D5D349BD39DC4DE70AC355A17B2D4A79D_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Command_t4313391C29D2BF583AD006A18DD41D475E2965D6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Controller_t922C1BD068C12432752CA531F0E03F1680F88650_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CrackBallScr_tB54B7A3D6A33814F84A1185CF08BDB238FDD2FA6_il2cpp_TypeInfo_var;
@@ -370,7 +369,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral80D03791CD4BD10265FBFD379F38E054DACF2F96
 IL2CPP_EXTERN_C String_t* _stringLiteral824CE56684D68A99A373DCA322A91BF83B20A242;
 IL2CPP_EXTERN_C String_t* _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1;
 IL2CPP_EXTERN_C String_t* _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D;
-IL2CPP_EXTERN_C String_t* _stringLiteral89F55DCBBA95534E6A5E845A908B5482ABBF7FDA;
 IL2CPP_EXTERN_C String_t* _stringLiteral8A2A2D68D2347AFE285552FD53753910D6900EE4;
 IL2CPP_EXTERN_C String_t* _stringLiteral8A8D04EB0352E622350FCDFDF9CCD664482CE240;
 IL2CPP_EXTERN_C String_t* _stringLiteral8B67530CBA4D465A0CA07276CC1F6EF345907B89;
@@ -3207,6 +3205,7 @@ struct Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_StaticFields
 	Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* ___reconnectThread;
 	MessageCollector_tF565584666A4878292E4F15530B9633C9B8BD9C9* ___messageCollector;
 	bool ___isShuttingDown;
+	int32_t ___networkGeneration;
 };
 struct Session_ME2_t7267B37B584D06863D0976E79E3B1ABADF304200_StaticFields
 {
@@ -3232,6 +3231,7 @@ struct Session_ME2_t7267B37B584D06863D0976E79E3B1ABADF304200_StaticFields
 	int32_t ___timeConnected;
 	String_t* ___strRecvByteCount;
 	bool ___isCancel;
+	int32_t ___networkGeneration;
 	MyVector_t633FD19BDDEC1DE59ECB04EE8B1E501BCC9F37B2* ___recieveMsg;
 	RuntimeObject* ___recieveMsgLock;
 };
@@ -5138,6 +5138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameMidlet_notifyDestroyed_m82E67FE71915
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cout_LogWarning_m72EDF2A92F92A528B8207F1733E9025F6121BA3D (String_t* ___0_str, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_OpenURL_mE748FA4D503715DEE12BCA4BDD8A5305AE41DB89 (String_t* ___0_url, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Main_exit_m65EF3898521247384BDF270C6D844AE3702B0918 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CloudflaredTcpTunnel_get_RemoteHost_m09BA337E0FBDF0993806229EE271C187AB8F6F30 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Pow_mE6F2B59E226EBA8568C9B70D01ED98FE0A71EE0A (int32_t ___0_data, int32_t ___1_x, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Res_sqrt_mECBBDFEEF01547459D4D53C7B46675B45CE1BA55 (int32_t ___0_a, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Res_angle_mFE0C7333209EDA2DF3381D108B3F3A2D293FD080 (int32_t ___0_dx, int32_t ___1_dy, const RuntimeMethod* method) ;
@@ -21218,13 +21219,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameMidlet__cctor_m72FC86D246A9FFC3A7F9B
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral89F55DCBBA95534E6A5E845A908B5482ABBF7FDA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE7593F0F59F343934DDAAD1D4F19212F69E109F5);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		((GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_il2cpp_TypeInfo_var))->___IP = _stringLiteral89F55DCBBA95534E6A5E845A908B5482ABBF7FDA;
-		Il2CppCodeGenWriteBarrier((void**)(&((GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_il2cpp_TypeInfo_var))->___IP), (void*)_stringLiteral89F55DCBBA95534E6A5E845A908B5482ABBF7FDA);
+		String_t* L_0;
+		L_0 = CloudflaredTcpTunnel_get_RemoteHost_m09BA337E0FBDF0993806229EE271C187AB8F6F30(NULL);
+		((GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_il2cpp_TypeInfo_var))->___IP = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_il2cpp_TypeInfo_var))->___IP), (void*)L_0);
 		((GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_il2cpp_TypeInfo_var))->___PORT = ((int32_t)14445);
 		((GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_il2cpp_TypeInfo_var))->___VOICE_PORT = ((int32_t)14446);
 		((GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_t38B1107579245883C98AE4B5A22E9446B0CFD240_il2cpp_TypeInfo_var))->___VERSION = _stringLiteralE7593F0F59F343934DDAAD1D4F19212F69E109F5;
@@ -25511,7 +25513,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Session_ME_isConnected_m4A24
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -25555,7 +25556,6 @@ IL_0021:
 	{
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_il2cpp_TypeInfo_var);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = ((Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME_tFCDFBAE990E49A5228C7F9D918ABD3067F86D0F3_il2cpp_TypeInfo_var))->___dataStream;
-		il2cpp_codegen_runtime_class_init_inline(CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var);
 		bool L_6;
 		L_6 = CloudflaredTcpTunnel_IsStreamConnected_m73E9A080B491F72943F89AD7422AE41623CD3759(L_5, NULL);
 		return L_6;
@@ -25576,7 +25576,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Session_ME2_isConnected_m290
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Session_ME2_t7267B37B584D06863D0976E79E3B1ABADF304200_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -25620,7 +25619,6 @@ IL_0021:
 	{
 		il2cpp_codegen_runtime_class_init_inline(Session_ME2_t7267B37B584D06863D0976E79E3B1ABADF304200_il2cpp_TypeInfo_var);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = ((Session_ME2_t7267B37B584D06863D0976E79E3B1ABADF304200_StaticFields*)il2cpp_codegen_static_fields_for(Session_ME2_t7267B37B584D06863D0976E79E3B1ABADF304200_il2cpp_TypeInfo_var))->___dataStream;
-		il2cpp_codegen_runtime_class_init_inline(CloudflaredTcpTunnel_t92259571B2359742AE36E11B9D2B223DE913D73C_il2cpp_TypeInfo_var);
 		bool L_6;
 		L_6 = CloudflaredTcpTunnel_IsStreamConnected_m73E9A080B491F72943F89AD7422AE41623CD3759(L_5, NULL);
 		return L_6;

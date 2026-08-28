@@ -7691,7 +7691,7 @@ IL_000b:
 		L_3 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_2, NULL);
 		NullCheck(L_1);
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker1< int32_t, int32_t >::Invoke(32, L_1, L_3);
+		L_4 = VirtualFuncInvoker1< int32_t, int32_t >::Invoke(31, L_1, L_3);
 		V_0 = L_4;
 		il2cpp_codegen_runtime_class_init_inline(myWriter_t920B50D01D02BAB876FEE7EB39C28A5CDB8177D5_il2cpp_TypeInfo_var);
 		ArrayPool_1_t645A9854926DCA747C654687A362AD03D55D2C07* L_5 = ((myWriter_t920B50D01D02BAB876FEE7EB39C28A5CDB8177D5_StaticFields*)il2cpp_codegen_static_fields_for(myWriter_t920B50D01D02BAB876FEE7EB39C28A5CDB8177D5_il2cpp_TypeInfo_var))->___s_arrayPool;
@@ -7727,7 +7727,7 @@ FINALLY_0070:
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = V_1;
 			NullCheck(L_10);
 			int32_t L_15;
-			L_15 = VirtualFuncInvoker5< int32_t, String_t*, int32_t, int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t >::Invoke(18, L_10, L_11, 0, L_13, L_14, 0);
+			L_15 = VirtualFuncInvoker5< int32_t, String_t*, int32_t, int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t >::Invoke(17, L_10, L_11, 0, L_13, L_14, 0);
 			V_2 = L_15;
 			int32_t L_16 = V_2;
 			myWriter_writeShort_mA5DD8B169D2AD813472CD2955B5061F536502553_inline(__this, ((int16_t)L_16), NULL);
