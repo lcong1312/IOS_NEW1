@@ -10467,7 +10467,7 @@ IL_0044:
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t82B49CDA338FC087D64B8CC640B936E5F6223AF4_il2cpp_TypeInfo_var);
-		((mGraphics_t82B49CDA338FC087D64B8CC640B936E5F6223AF4_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t82B49CDA338FC087D64B8CC640B936E5F6223AF4_il2cpp_TypeInfo_var))->___zoomLevel = 3;
+		((mGraphics_t82B49CDA338FC087D64B8CC640B936E5F6223AF4_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t82B49CDA338FC087D64B8CC640B936E5F6223AF4_il2cpp_TypeInfo_var))->___zoomLevel = 4;
 		return;
 	}
 
@@ -10482,7 +10482,7 @@ IL_0055:
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t82B49CDA338FC087D64B8CC640B936E5F6223AF4_il2cpp_TypeInfo_var);
-		((mGraphics_t82B49CDA338FC087D64B8CC640B936E5F6223AF4_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t82B49CDA338FC087D64B8CC640B936E5F6223AF4_il2cpp_TypeInfo_var))->___zoomLevel = 2;
+		((mGraphics_t82B49CDA338FC087D64B8CC640B936E5F6223AF4_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t82B49CDA338FC087D64B8CC640B936E5F6223AF4_il2cpp_TypeInfo_var))->___zoomLevel = 3;
 		return;
 	}
 
