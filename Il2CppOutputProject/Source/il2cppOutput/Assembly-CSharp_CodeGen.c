@@ -15,7 +15,11 @@
 extern void ObfuscatedEndpoints_get_WebBaseUrl_mCF5B7C9B1D862218CB51A62742813A0EEC3327D3 (void);
 extern void ObfuscatedEndpoints_get_WebHomeUrl_m8DE24EA1B8EEFA42543C49901A7D898DD60CC12B (void);
 extern void ObfuscatedEndpoints_get_PasswordRecoveryUrl_m0EA1CC972B2A9D34B8BFD06C3B7BD91B689653CA (void);
+extern void ObfuscatedEndpoints_get_GameServerHost_mA81972EC4C01933F1FE29650AB0390A4A97655A9 (void);
+extern void ObfuscatedEndpoints_get_GameServerPort_mCE77CA8EE005A7DAE957F3F8E892E479FE1A580F (void);
+extern void ObfuscatedEndpoints_get_GameServerListEntry_m160AEB8E3991F2D0E784A3D27F0A1A8DB56054D8 (void);
 extern void ObfuscatedEndpoints_DecodeWebBaseUrl_mA1D3B17EE0034FAD2D720317F94910C4DC2163B5 (void);
+extern void ObfuscatedEndpoints_DecodeGameServerHost_m0FD2647DF342ECDA4716717EB4F0F31A1170D8B9 (void);
 extern void TabManager_get_CurrentTab_m7301D4568A5D1AB5796F3BEC0851C96C9D2384C5 (void);
 extern void TabManager_set_CurrentTab_mDAC617901768F00081EC618C7132FABA85732306 (void);
 extern void TabManager_SwitchTab_mA795B13E7690C1386CAEC236EF7E7D7E7F8A9EE4 (void);
@@ -3874,6 +3878,7 @@ extern void AutoSkill_LoadData_m38FDB427A2EB4DA8FFA46B7AC5FE418E96B65453 (void);
 extern void AutoSkill_smethod_6_mBA49BB11B52B843C6875D803E6BFE76DC2C41026 (void);
 extern void AutoSkill_LoadKeySkills_m680E18B23FC0AC14BA1129AAF5F50945F2AB3000 (void);
 extern void AutoSkill_AutoSendAttack_mFFC446D78BF97A06AAA89BA83E4A8DA486FEAF12 (void);
+extern void AutoSkill_getSkillAttack_m8920B07255776B635B824170C874049EF787D4B8 (void);
 extern void AutoSkill_AutoSkillForPet_m6C8E6BB7ACAE8179851076A0839EC3732BB8FE87 (void);
 extern void AutoSkill_AutoUseSkill_m2C1C4331EA1AF6D6138BF1FA8EC49765EAFDBEAB (void);
 extern void AutoSkill_isMeCanAttackChar_m12E9EDF7576C0801E30FD660E555DAB67E8CD65C (void);
@@ -7994,6 +7999,7 @@ extern void AutoSkill_LoadData_mD24806BA48092DD581032B008436219466E38C9A (void);
 extern void AutoSkill_smethod_6_m33E6BE290E2C71409792053CA40876D4B357CBAC (void);
 extern void AutoSkill_LoadKeySkills_m5284502D6C46BEBF41025B3C45D02BF19262F6ED (void);
 extern void AutoSkill_AutoSendAttack_m1F421419E6C33FDF0E8EBA5750EBF679B029C0FF (void);
+extern void AutoSkill_getSkillAttack_mC3F8267B116EDEE95F178E455F00880D10074432 (void);
 extern void AutoSkill_AutoSkillForPet_m224D2C1C84E72422CE939B2F77A9F9884AF54500 (void);
 extern void AutoSkill_AutoUseSkill_mCA6B1474F223C8E9493A052428CFFBAD316879E0 (void);
 extern void AutoSkill_isMeCanAttackChar_m2EE2627FBD8B65061931BA1DD315431574CC6B28 (void);
@@ -8207,7 +8213,7 @@ extern void NumbericSlider_getValue_mA1448B3AD1A392D9C85AC16890C9BCD19D4DA90F (v
 extern void NumbericSlider_setRange_mACA9F44A2BBA96BD5ED72CDB05886A9479684BE3 (void);
 extern void NumbericSlider_getPercentage_m76C42C63EE7FB38CF0535259625CA26E5D205CAA (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[8335] = 
+static Il2CppMethodPointer s_methodPointers[8341] = 
 {
 	NULL,
 	NULL,
@@ -8238,7 +8244,11 @@ static Il2CppMethodPointer s_methodPointers[8335] =
 	ObfuscatedEndpoints_get_WebBaseUrl_mCF5B7C9B1D862218CB51A62742813A0EEC3327D3,
 	ObfuscatedEndpoints_get_WebHomeUrl_m8DE24EA1B8EEFA42543C49901A7D898DD60CC12B,
 	ObfuscatedEndpoints_get_PasswordRecoveryUrl_m0EA1CC972B2A9D34B8BFD06C3B7BD91B689653CA,
+	ObfuscatedEndpoints_get_GameServerHost_mA81972EC4C01933F1FE29650AB0390A4A97655A9,
+	ObfuscatedEndpoints_get_GameServerPort_mCE77CA8EE005A7DAE957F3F8E892E479FE1A580F,
+	ObfuscatedEndpoints_get_GameServerListEntry_m160AEB8E3991F2D0E784A3D27F0A1A8DB56054D8,
 	ObfuscatedEndpoints_DecodeWebBaseUrl_mA1D3B17EE0034FAD2D720317F94910C4DC2163B5,
+	ObfuscatedEndpoints_DecodeGameServerHost_m0FD2647DF342ECDA4716717EB4F0F31A1170D8B9,
 	TabManager_get_CurrentTab_m7301D4568A5D1AB5796F3BEC0851C96C9D2384C5,
 	TabManager_set_CurrentTab_mDAC617901768F00081EC618C7132FABA85732306,
 	TabManager_SwitchTab_mA795B13E7690C1386CAEC236EF7E7D7E7F8A9EE4,
@@ -12154,6 +12164,7 @@ static Il2CppMethodPointer s_methodPointers[8335] =
 	AutoSkill_smethod_6_mBA49BB11B52B843C6875D803E6BFE76DC2C41026,
 	AutoSkill_LoadKeySkills_m680E18B23FC0AC14BA1129AAF5F50945F2AB3000,
 	AutoSkill_AutoSendAttack_mFFC446D78BF97A06AAA89BA83E4A8DA486FEAF12,
+	AutoSkill_getSkillAttack_m8920B07255776B635B824170C874049EF787D4B8,
 	AutoSkill_AutoSkillForPet_m6C8E6BB7ACAE8179851076A0839EC3732BB8FE87,
 	AutoSkill_AutoUseSkill_m2C1C4331EA1AF6D6138BF1FA8EC49765EAFDBEAB,
 	AutoSkill_isMeCanAttackChar_m12E9EDF7576C0801E30FD660E555DAB67E8CD65C,
@@ -16331,6 +16342,7 @@ static Il2CppMethodPointer s_methodPointers[8335] =
 	AutoSkill_smethod_6_m33E6BE290E2C71409792053CA40876D4B357CBAC,
 	AutoSkill_LoadKeySkills_m5284502D6C46BEBF41025B3C45D02BF19262F6ED,
 	AutoSkill_AutoSendAttack_m1F421419E6C33FDF0E8EBA5750EBF679B029C0FF,
+	AutoSkill_getSkillAttack_mC3F8267B116EDEE95F178E455F00880D10074432,
 	AutoSkill_AutoSkillForPet_m224D2C1C84E72422CE939B2F77A9F9884AF54500,
 	AutoSkill_AutoUseSkill_mCA6B1474F223C8E9493A052428CFFBAD316879E0,
 	AutoSkill_isMeCanAttackChar_m2EE2627FBD8B65061931BA1DD315431574CC6B28,
@@ -16551,12 +16563,12 @@ extern void GradientInfo__ctor_m67BC0D78C498A6D859B974A528CEE8CC075F8969_Adjusto
 extern void GroupItem__ctor_m2D6B775FAF88363A52796CE0D5B01919BEBF65FE_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[4] = 
 {
-	{ 0x060005FE, GradientInfo__ctor_mB96CB30DF7F1849D2B05C04038D2C30A979D0080_AdjustorThunk },
-	{ 0x06000FE0, GroupItem__ctor_mD22CD73CA11F5E20BABB8B0978BE7A0A0346C37F_AdjustorThunk },
-	{ 0x0600161C, GradientInfo__ctor_m67BC0D78C498A6D859B974A528CEE8CC075F8969_AdjustorThunk },
-	{ 0x06002031, GroupItem__ctor_m2D6B775FAF88363A52796CE0D5B01919BEBF65FE_AdjustorThunk },
+	{ 0x06000602, GradientInfo__ctor_mB96CB30DF7F1849D2B05C04038D2C30A979D0080_AdjustorThunk },
+	{ 0x06000FE5, GroupItem__ctor_mD22CD73CA11F5E20BABB8B0978BE7A0A0346C37F_AdjustorThunk },
+	{ 0x06001621, GradientInfo__ctor_m67BC0D78C498A6D859B974A528CEE8CC075F8969_AdjustorThunk },
+	{ 0x06002037, GroupItem__ctor_m2D6B775FAF88363A52796CE0D5B01919BEBF65FE_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[8335] = 
+static const int32_t s_InvokerIndices[8341] = 
 {
 	0,
 	0,
@@ -16585,6 +16597,10 @@ static const int32_t s_InvokerIndices[8335] =
 	0,
 	0,
 	8255,
+	8255,
+	8255,
+	8255,
+	8248,
 	8255,
 	8255,
 	8255,
@@ -20498,6 +20514,7 @@ static const int32_t s_InvokerIndices[8335] =
 	2301,
 	8286,
 	8119,
+	8286,
 	8286,
 	8286,
 	8286,
@@ -24681,6 +24698,7 @@ static const int32_t s_InvokerIndices[8335] =
 	8286,
 	8286,
 	8286,
+	8286,
 	8119,
 	7788,
 	7788,
@@ -24897,10 +24915,10 @@ static const int32_t s_InvokerIndices[8335] =
 static const Il2CppTokenRangePair s_rgctxIndices[5] = 
 {
 	{ 0x02000002, { 0, 155 } },
-	{ 0x06000945, { 155, 2 } },
-	{ 0x06000948, { 157, 2 } },
-	{ 0x06001963, { 159, 2 } },
-	{ 0x06001966, { 161, 2 } },
+	{ 0x06000949, { 155, 2 } },
+	{ 0x0600094C, { 157, 2 } },
+	{ 0x06001968, { 159, 2 } },
+	{ 0x0600196B, { 161, 2 } },
 };
 extern const uint32_t g_rgctx_U3CU3Ef__AnonymousType0_22_t43F1DBA0B674F35C8E51C7C40B83972FC5203D40;
 extern const uint32_t g_rgctx_U3CenableEchoCancellationU3Ej__TPar_t0019F48D33237B7D9902602FA80B4D005874AB4E;
@@ -25235,7 +25253,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	8335,
+	8341,
 	s_methodPointers,
 	4,
 	s_adjustorThunks,
